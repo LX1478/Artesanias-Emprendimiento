@@ -147,11 +147,11 @@ h1{
 }
 
 .cards-custom{
-    display:grid;
     margin-left: 50px;
     margin-top: 50px;
+
+    display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-    
     column-gap: 50px;
     row-gap: 50px;
     
@@ -385,3 +385,105 @@ h1{
     margin-left:500px;
 }
 
+
+
+
+/* =========================================== Media Querie para celular ================================================================= */
+
+@media screen and (max-width:768px){
+    /* header */
+    .header{
+        font-size: 14px;
+        display:flex;
+        flex-direction: column;
+    }
+    /* seccion del buscador */
+    .section-search{
+        padding: 2px 10px;
+        flex-grow: 1;
+    }
+    .input-search{
+         margin-top: 10px;
+    }
+     .search-custom{
+         width: 300px;
+         height: 27px;
+    }
+    .search-btn img{
+        width: 25px;
+        height: 27px;
+    }
+
+    /* seccion de la cuenta, favorito y carrito */
+    .account-btn-custom{
+        margin: 20px 10px;
+        padding: 10px 132px;
+    }
+
+    /* main */
+    .main{
+        font-size: 14px;
+    }
+    
+    h1{
+        margin: 0px;
+    }
+    
+    /*============================================== Home ===========================================*/
+    
+    .home-main{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .nov-custom{
+        font-size: 14px;
+        width: 400px;
+        height: auto;
+    }
+
+
+    .cards-custom{
+        margin-left: 17%;
+        display:flex;
+        flex-direction: column;
+        row-gap: 40px;
+        
+    }
+    
+    .cards-title{
+        margin: 0px;
+        height: 0px;
+    }
+    .card-custom{
+        width: 250px;
+        height: 380px;
+        background-color: white;
+        font-size: 20px;
+        border:#255F85 solid 3px;
+        
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: space-around;
+    }
+    .card-custom:hover{
+        border:#488BF7 solid 6px;
+    }
+    .cardImg{
+        width: 250px;
+        height: 200px;
+        text-align: center;
+    }
+    .cardBuy__btn{
+        background-color: #255F85;
+        padding: 7px 60px;
+        border-color: #255F85 ;
+        color: white;
+        font-size: 15px; 
+        border-radius: 25px;
+    }
+    
+
+
+}
