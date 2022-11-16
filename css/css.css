@@ -62,11 +62,11 @@
 
 .input-search {
     margin-top: 30px;
+    background-color: white;
 }
-
 .search-custom {
-    width: 500px;
-    height: auto;
+    width: 700px;
+    height: 25px;
 }
 
 .search-btn {
@@ -75,7 +75,7 @@
 }
 
 .search-btn img {
-    width: 25px;
+    width: 24px;
     height: 25px;
 }
 
@@ -111,11 +111,49 @@
 
 .account-img1 {
     grid-area: aimg1;
+    
+    position:relative
 }
 
-.accounte-img2 {
-    grid-area: aimg2;
+.account-img1:hover {
+    animation-name: girar;
+    animation-duration: 5s;
 }
+
+
+.account-img2 {
+    grid-area: aimg2;
+
+    animation-name: adelante;
+    animation-duration: 6s;
+    animation-iteration-count: 3;
+    position: relative;
+}
+@keyframes girar{
+    50%{
+        transform: rotate(370deg);
+    }
+}
+
+@keyframes adelante {
+    0%{
+        left: 0px;
+    }
+    25% {
+        left: 50px;
+    }
+
+    50% {
+        transform: rotate(360deg);
+    }
+
+    75% {
+        left: 0px;
+    }
+
+}
+
+
 
 .account-txt1 {
     grid-area: atxt1;
@@ -127,7 +165,7 @@
 
 
 
-/*------------------------------------------------------main------------------------------------------------------ */
+/*============================================= MAIN ================================================================== */
 
 .main {
     font-size: 20px;
@@ -139,7 +177,7 @@ h1 {
     margin: 0px 575px;
 }
 
-/*============================================== Home ===========================================*/
+/*============================================== Home ================================================================*/
 
 .home-main {
     background-color: #ebebeb;
@@ -193,6 +231,8 @@ h1 {
 
 .card-custom:hover {
     border: #488BF7 solid 6px;
+    transform: scale(1.1,1.1);
+
 }
 
 .cardImg {
@@ -309,8 +349,12 @@ h1 {
 }
 
 /* NOSOTROS */
-.we__title {
+.container-fluid {
+    margin: 20px 0px
+}
 
+.we__title {
+    margin: 0px;
     color: #255F85;
 }
 
@@ -337,7 +381,7 @@ h1 {
     resize: none;
 }
 
-.btnSubmit {
+.btn-submit {
     margin: 10px 20px;
     padding: 8px 135px;
     background-color: #255F85;
@@ -454,18 +498,19 @@ h1 {
     }
 
     .search-btn img {
-        display:none;
+        display: none;
     }
 
     /* seccion de la cuenta, favorito y carrito */
     .section-account {
         width: 400px;
     }
+
     .account-btn-custom {
         margin: 20px 20px;
         padding: 6px 140px;
     }
-    
+
 
     /* main */
     .main {
@@ -488,7 +533,8 @@ h1 {
         width: auto;
         height: auto;
     }
-    .nov{
+
+    .nov {
         width: auto;
         margin: 0px 10px;
 
@@ -508,9 +554,11 @@ h1 {
         width: 220px;
         height: 340px;
     }
-    .cardDescription__title{
+
+    .cardDescription__title {
         font-size: 16px;
     }
+
     /* ========================== BLOG ======================== */
 
     .blog-title h1 {
@@ -518,19 +566,22 @@ h1 {
         font-size: 18;
         text-align: center;
     }
+
     .blog {
         display: flex;
         flex-direction: column;
     }
-    .blog-section{
-        margin:5px;
+
+    .blog-section {
+        margin: 5px;
         font-size: 14px;
     }
-    
+
     .blog-post__title {
         font-size: 16;
     }
-    .blog-img{
+
+    .blog-img {
         text-align: center;
     }
 
@@ -539,85 +590,108 @@ h1 {
         display: flex;
         flex-direction: column;
     }
-    
+
     .cart-inf {
         margin: 20px 20px;
     }
-    
+
     .cart-title {
         width: auto;
     }
-    
+
     .cart-items {
         width: auto;
         height: 300px;
     }
-    
+
     .cart-card {
         margin: 20px 20px;
-    
+
     }
-    
+
     #buy-btn {
         width: 320px;
         height: 40px;
         margin-left: 20px;
     }
-    
+
     .reasurrances-items {
         font-size: 14px;
     }
-    
 
-/* =============================== FOOTER =============================================== */
+    /* ==================== SOBRE NOSOTROS =========================== */
+    .we-img {
+        width: 380px;
+    }
+
+    /* ======================= CONTACTO ===============================  */
+    .form-custom {
+        width: 300px;
+    }
+
+    .form__inf {
+        margin: 20px 0px;
+    }
+
+    .btn-submit {
+        padding: 8px 97px;
+    }
+
+    .contact-u {
+        margin-top: 60px;
+    }
+
+    .we-location {
+        width: 350px;
+    }
+
+
+    /* =============================== FOOTER =============================================== */
     .footer {
         font-size: 12px;
         width: auto;
     }
-    
+
     .information {
         padding-top: 20px;
         display: flex;
         flex-direction: column;
     }
-    
+
     .inf-title {
         font-size: 14px;
     }
-    
+
     /* nosotros */
     .we {
         margin: 0px 10px;
         width: auto;
     }
-    
+
     /* contacto */
     .footer-contact {
         margin-top: 20px;
         width: auto;
-        text-align:start;   
+        text-align: start;
         text-align: center;
     }
 
-    
+
     /* redes */
     .networks {
         text-align: start;
         margin: 0px 10px
     }
-    
-    
+
+
     .artisans h6 {
         margin-right: 10px;
         padding: 0px;
         font-size: 12px;
     }
-    
+
     /* Para acomodar los t2, t3, t4 hacia la derecha */
     .t2 {
         margin-left: 0px;
     }
-    
-
-
 }

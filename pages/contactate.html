@@ -68,51 +68,59 @@
         </section>
     </header>
     <!-- ------------------------------------------- MAIN ------------------------------------------------->
-    <main class="main">
-        <div class="contact-custom">
-        <h2 class="contactanos-title1">CONTACTÁNOS</h2>
-            <!-- --------------------FORMULARIO----------------------------- -->
-            <form class="form-custom" action="">
-                <div class="form__name">
-                    <label for="">Nombre</label>
-                    <input type="text" name="nombre" placeholder="Ingresa tu nombre">
-                </div>
-                <div class="form__surname">
-                    <label for="">Apellido</label>
-                    <input type="text" name="apellido" placeholder="Ingresa tu apellido">
-                </div>
-                <div class="form__clientType">
-                    <label for="particular">Particular</label>
-                    <input type="radio" name="type-client" id="particular" value="particular">
-                    <label for="empresa">Empresa</label>
-                    <input type="radio" name="type-client" id="empresa" value="empresa">
-                </div>
-                <div class="form__email">
-                    <label for="">Correo Electrónico</label>
-                    <input type="email" name="" placeholder="Ingresa tu correo">
-                </div>
-                <div class="form__message">
-                    <label for="">Mensaje</label>
-                    <br>
-                    <textarea name="" id="form-message" cols="35" rows="3"></textarea>
-                </div>
-                <div class="form__terms">
-                    <div class="form-check form-switch">
-                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-                        <label class="form-check-label" for="flexSwitchCheckDefault">Acepto los términos y condiciones</label>
+    <main class="main container-fluid">
+        <div class="contact-custom row">
+            <div class="col-12 col-xl-6">
+                <h2 class="contactanos-title1">CONTACTÁNOS</h2>
+                <form class="form-custom" action="">
+                    <div class="form__inf">
+                        <label for="">Nombre</label>
+                        <input type="text" name="nombre" placeholder="Ingresa tu nombre">
                     </div>
-                </div>
-                <div class="form__btnSubmit">
-                    <input class="btnSubmit" type="submit" value="ENVIAR">
-                    <br>
-                </div>
-            </form>
+                    <div class="form__inf">
+                        <label for="">Apellido</label>
+                        <input type="text" name="apellido" placeholder="Ingresa tu apellido">
+                    </div>
+                    <div class="form__inf">
+                        <label for="particular">Particular</label>
+                        <input type="radio" name="type-client" id="particular" value="particular">
+                        <label for="empresa">Empresa</label>
+                        <input type="radio" name="type-client" id="empresa" value="empresa">
+                    </div>
+                    <div class="form__inf">
+                        <label for="">Correo Electrónico</label>
+                        <input type="email" name="" placeholder="Ingresa tu correo">
+                    </div>
+                    <div class="form__inf">
+                        <label for="">Mensaje</label>
+                        <br>
+                        <textarea name="" id="form-message" cols="35" rows="3"></textarea>
+                    </div>
+                    <div class="form__inf">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Acepto los términos y
+                                condiciones</label>
+                        </div>
+                    </div>
+                    <div class="form-inf">
+                        <input class="btn-submit" type="submit" value="ENVIAR">
+                        <br>
+                    </div>
+                </form>
+            </div>
 
-            <h2 class="contactanos-title2">UBICACIÓN</h2>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3639.677440334117!2d-65.30202871173137!3d-24.183042676888615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f4287ab9d59%3A0x6e1578fc325ecf5e!2sPaseo%20de%20los%20Artesanos!5e0!3m2!1sen!2sar!4v1668442179434!5m2!1sen!2sar"
-                width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="contact-u col-12 col-xl-6">
+                <h2 class="contactanos-title2">UBICACIÓN</h2>
+                <iframe
+                    class="we-location"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3639.677440334117!2d-65.30202871173137!3d-24.183042676888615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f4287ab9d59%3A0x6e1578fc325ecf5e!2sPaseo%20de%20los%20Artesanos!5e0!3m2!1sen!2sar!4v1668442179434!5m2!1sen!2sar"
+                    width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+
+
         </div>
 
     </main>
