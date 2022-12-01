@@ -1,0 +1,56 @@
+@media screen and (max-width:480px) {
+
+    .header {
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* seccion del log */
+    .brand-custom a img {
+        @include sizes(250px, 150px);
+
+    }
+
+    /* seccion del buscador */
+    .section-search {
+        padding: 0px;
+        flex-grow: 1;
+    }
+
+    .input-search {
+        width: auto;
+        background-color:#D1394F;
+        margin-top: 10px;
+    }
+
+    .search-custom {
+        margin-left: 20px;
+        width: 350px;
+        height: 28px;
+    }
+
+    .search-btn img {
+        display: none;
+    }
+
+    /* seccion de la cuenta, favorito y carrito */
+    .section-account {
+        width: 400px;
+    }
+
+    .account-btn-custom {
+        margin: 20px 30px;
+        padding: 6px 100px;
+    }
+
+
+    /* main */
+    .main {
+        font-size: 12px;
+    }
+
+    h1 {
+        margin: 0px;
+    }
+}

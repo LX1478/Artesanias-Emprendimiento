@@ -1,0 +1,115 @@
+.home-main {
+    background-color: $color-2;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    
+    
+}
+
+.aside-nov{
+    background-color: $color-2;
+    
+    height: 950;
+
+    
+}
+
+.container-nov {
+    padding-left: 10px;
+    color: $color-1;
+    font-size: 18px;
+    background-color: $color-light-blue;
+    
+    
+    
+    animation: abajo 2s 1;
+    
+}
+
+@keyframes abajo{
+    0%{
+        background-color: $color-2;
+    }
+
+    50%{
+        background-color: $color-light-blue;
+    }
+}
+
+.nov{
+    position:relative;
+    animation-name: aparecer;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+}
+
+@keyframes aparecer{
+    0%{
+        left: -600px;
+    }
+    50%{
+       left: 0px; 
+    }
+}
+
+
+.main-cards{
+    margin-top: 30px;
+    
+    &__title {
+        margin: 0px;
+        padding-left: 40px;
+        margin-bottom: 40px;
+        
+        height: 40px;
+        
+    }
+
+    &__custom{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        
+        grid-row-gap: 40px;
+        justify-items: center;
+    }
+}
+
+
+
+
+
+
+
+.card-custom {
+    @include sizes(200px, 380px);
+    background-color: $color-1;
+    font-size: 20px;
+    border: $color-blue solid 3px;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+
+    &:hover {
+        border: $color-light-blue solid 4px;
+        transform: scale(1.1,1.1);
+        box-shadow: 6px 6px 4px $color-blue;
+    
+    }
+}
+
+
+
+.card-description__title{
+    font-size: 18px;
+}
+
+
+
+.card-img {
+    @include sizes(150px, 200px);
+    text-align: center;
+}
+

@@ -1,0 +1,35 @@
+@media screen and (max-width:480px) {
+    .cart-custom {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cart-inf {
+        margin: 20px 20px;
+    }
+
+    .cart-title {
+        width: auto;
+    }
+
+    .cart-items {
+        width: auto;
+        height: 300px;
+    }
+
+    .cart-card {
+        margin: 20px 20px;
+
+    }
+
+    #buy-btn {
+        width: 320px;
+        height: 40px;
+        margin-left: 20px;
+    }
+
+    .reasurrances-items {
+        font-size: 14px;
+    }
+
+}

@@ -1,0 +1,21 @@
+@media screen and (max-width:480px) {
+    .form-custom {
+        width: 300px;
+    }
+
+    .form__inf {
+        margin: 20px 0px;
+    }
+
+    .btn-submit {
+        padding: 8px 97px;
+    }
+
+    .contact-u {
+        margin-top: 60px;
+    }
+
+    .we-location {
+        @include sizes(350px, 300px);
+    }
+}

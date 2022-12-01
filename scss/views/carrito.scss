@@ -1,0 +1,83 @@
+$border: $color-blue solid 4px;
+
+.cart-custom {
+    background-color: $color-2;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+
+}
+
+.cart-container{
+    margin-left: 20px;
+}
+
+.cart-inf {
+    margin: 20px 0px;
+}
+
+.cart-title {
+    
+    background-color: $color-1;
+    border: $border;
+
+}
+
+.cart-items {
+    
+    height: 400px;
+    background-color: $color-1;
+    border-style: solid;
+    border-width: 0px 4px 4px 4px;
+    border-color: $color-blue;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-card {
+    margin: 20px 40px 20px 20px;
+
+}
+
+.card-buy-details {
+    border: $border;
+    background-color: $color-1;
+}
+
+.card-buy {
+    height: 70px;
+    border-bottom: $border;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.cart-buy__btn{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.reasurrances-items {
+    list-style-type: none;
+    padding: 0px;
+    font-size: 14px;
+}
+
+.reasurrances-item {
+    background-color: $color-1;
+    margin: 20px 0px;
+    border-width: 0px 0px 0px 6px;
+    border-style: solid;
+    border-left-color: $color-blue;
+
+    display: flex;
+    flex-direction: row;
+}

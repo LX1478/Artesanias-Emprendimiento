@@ -1,0 +1,37 @@
+//BASE
+@import './base/colors.scss';
+@import './base/reset.scss';
+@import './base/typo.scss';
+
+//Utilities
+@import './utilities/mixins.scss';
+
+//COMPONENTS
+@import './components/btn.scss';
+
+//LAYOUT
+@import './layout/header.scss';
+@import './layout/footer.scss';
+@import './layout/main.scss';
+@import './layout/form.scss';
+
+//VENDOR
+@import './vendor/boostrap.scss';
+
+//VIEWS
+@import './views/home.scss';
+@import './views/blog.scss';
+@import './views/carrito.scss';
+@import './views/nosotros.scss';
+
+//MEDIAQUERIES
+//comun
+@import './mediaqueries/comun/headerM.scss';
+@import './mediaqueries/comun/footer.scss';
+//viewsM
+@import './mediaqueries/viewsM/homeM.scss';
+@import './mediaqueries/viewsM/blogM.scss';
+@import './mediaqueries/viewsM/carritoM.scss';
+@import './mediaqueries/viewsM/nosostrosM.scss';
+@import './mediaqueries/viewsM/contactateM.scss';
+

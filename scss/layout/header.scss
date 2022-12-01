@@ -1,0 +1,108 @@
+.header {
+    font-family: Goldman, cursive;
+    background-color: $color-red;
+    font-size: 15px;
+    color: $color-1;
+    
+
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.section-main {
+    flex-grow: 1;
+}
+
+.brand-custom {
+    margin: 20px 0px;
+}
+
+.section-search {
+    padding: 10px 0px;
+    flex-grow: 2;
+}
+.input-search {
+    margin-top: 30px;
+    width: 450px;
+    background-color: $color-1;
+    
+}
+.search-custom {
+    width: 400px;
+    height: 25px;
+
+}
+
+.search-btn {
+    border: none;
+    background-color: $color-1;
+}
+
+.search-btn img {
+    width: 24px;
+    height: 23px;
+}
+
+
+.section-account {
+    flex-grow: 1;
+    display: grid;
+    
+    grid-template-areas:
+        "abtn abtn"
+        "aimg1 aimg2"
+        "atxt1 atxt2";
+
+}
+
+.account-btn {
+    grid-area: abtn;
+}
+
+.account-img1 {
+    grid-area: aimg1;
+    position:relative;
+
+    &:hover {
+        animation-name: girar;
+        animation-duration: 3s;
+    }
+}
+
+.account-img2 {
+    grid-area: aimg2;
+
+    
+    
+
+    &:hover{
+        animation-name: reversa;
+        animation-duration: 2s;
+    }
+}
+
+
+@keyframes girar{
+    50%{
+        transform: rotate(370deg);
+    }
+}
+
+@keyframes reversa {
+    50% {
+        transform: rotateY(160deg);
+    }
+
+}
+
+
+
+.account-txt1 {
+    grid-area: atxt1;
+}
+
+.account-txt2 {
+    grid-area: atxt2;
+}
+

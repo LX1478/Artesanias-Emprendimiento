@@ -1,0 +1,62 @@
+//Boton global
+.btn-custom{
+    background-color: $color-blue;
+    border-color: $color-blue;
+    border-radius: 30px;
+    font-size: 20px;
+    color: $color-1;
+}
+
+//Boton de la parte superior derecha del header de mi cuenta
+.account-btn-custom {
+    @extend .btn-custom;
+
+    border:none;
+    margin: 10px 0px;
+    padding: 8px 40px;
+
+    &:hover {
+        background-color:$color-light-blue;
+    }
+}
+
+//Boton de comprar de las cards 
+.card-buy__btn {
+    @extend .btn-custom;
+    padding: 5px 30px;
+
+    &:hover{
+        border-color: $color-light-blue;
+        border-style: solid;
+        color: $color-2;
+    }
+}
+
+//Boton de finalizar compras del carrito
+#buy-btn {
+    @extend .btn-custom;
+    padding: 6px 50px;
+}
+
+//Boton enviar del formulario
+.btn-submit {
+    @extend .btn-custom;
+    margin: 10px 0px;
+    padding: 8px 80px;
+
+    
+}
+
+//Boton de contactar del footer
+.contactBtn {
+    @extend .btn-custom;
+    font-size: 15;
+    border: $color-blue 3px solid;
+    border-radius: 0px;
+    padding: 7px 20px;
+    &:hover{
+        border: $color-light-blue 3px solid;
+        
+    }
+}
+
