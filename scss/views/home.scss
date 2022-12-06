@@ -2,16 +2,11 @@
     background-color: $color-2;
     display: grid;
     grid-template-columns: 1fr 4fr;
-    
-    
 }
 
 .aside-nov{
     background-color: $color-2;
-    
     height: 950;
-
-    
 }
 
 .container-nov {
@@ -19,11 +14,8 @@
     color: $color-1;
     font-size: 18px;
     background-color: $color-light-blue;
-    
-    
-    
+
     animation: abajo 2s 1;
-    
 }
 
 @keyframes abajo{
@@ -52,7 +44,6 @@
     }
 }
 
-
 .main-cards{
     margin-top: 30px;
     
@@ -60,9 +51,7 @@
         margin: 0px;
         padding-left: 40px;
         margin-bottom: 40px;
-        
         height: 40px;
-        
     }
 
     &__custom{
@@ -73,12 +62,6 @@
         justify-items: center;
     }
 }
-
-
-
-
-
-
 
 .card-custom {
     @include sizes(200px, 380px);
@@ -96,17 +79,12 @@
         border: $color-light-blue solid 4px;
         transform: scale(1.1,1.1);
         box-shadow: 6px 6px 4px $color-blue;
-    
     }
 }
-
-
 
 .card-description__title{
     font-size: 18px;
 }
-
-
 
 .card-img {
     @include sizes(150px, 200px);

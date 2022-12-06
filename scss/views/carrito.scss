@@ -4,7 +4,6 @@ $border: $color-blue solid 4px;
     background-color: $color-2;
     display: grid;
     grid-template-columns: 3fr 2fr;
-
 }
 
 .cart-container{
@@ -19,11 +18,9 @@ $border: $color-blue solid 4px;
     
     background-color: $color-1;
     border: $border;
-
 }
 
 .cart-items {
-    
     height: 400px;
     background-color: $color-1;
     border-style: solid;
@@ -53,7 +50,6 @@ $border: $color-blue solid 4px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    
 }
 
 .cart-buy__btn{
@@ -62,8 +58,6 @@ $border: $color-blue solid 4px;
     align-items: center;
     justify-content: center;
 }
-
-
 
 .reasurrances-items {
     list-style-type: none;
