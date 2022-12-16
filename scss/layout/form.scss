@@ -1,19 +1,47 @@
 .form-custom {
     background-color: $color-3;
-    width: 380px;
+    width: 467px;
     padding: 15px;
     margin-left: 10px;
-    
+
     border: 5px solid;
     border-color: $color-blue;
     border-radius: 20px;
 }
-
-.form__inf{
-    margin: 10px 0px;
+.contact-custom__container{
+    margin:40px 0px;
 }
 
-.form__btn{
+.form__inf {
+    margin: 10px 0px;
+
+    & input[type="text"] {
+        padding-left: 5px;
+        outline: none;
+
+        &:focus {
+            border: 2px $color-blue solid;
+        }
+    }
+    & input[type="email"] {
+        padding-left: 5px;
+        outline: none;
+
+        &:focus {
+            border: 2px $color-blue solid;
+        }
+    }
+    & textarea {
+        padding-left: 5px;
+        outline: none;
+
+        &:focus {
+            border: 2px $color-blue solid;
+        }
+    }
+}
+
+.form__btn {
     text-align: center;
 }
 
@@ -21,3 +49,85 @@
     resize: none;
 }
 
+
+@media screen and (max-width:991px){
+    .contact-custom__container {
+        margin: 20px 0px;
+        padding: 0px;
+        & h2 {
+            text-align: center;
+        }
+
+    }
+
+    .form-custom{
+        width: 650px;
+    }
+
+    .form__inf {
+        & input[type="text"]{
+            width: 500;
+        }
+        & input[type="email"]{
+            width: 383px;
+        }
+        & textarea{
+            width: 583px;
+        }
+    }
+
+    .we-location{
+        width: 650px;
+    }
+}
+
+@include media(md) {
+    .form-custom {
+        width: 400px;
+        font-size: 16;
+    }
+    .form__inf {
+        & input[type="text"]{
+            width: 350;
+        }
+        & input[type="email"]{
+            width: 350px;
+        }
+        & textarea{
+            width: 350px;
+        }
+    }
+
+    .we-location {
+        @include sizes(380px, 400);
+        width: 400px;
+    }
+}
+
+@include media(sm) {
+    .form-custom {
+        width: 300px;
+    }
+
+    .form__inf {
+        margin: 10px 0px;
+
+        & input[type="text"]{
+            width: 250;
+        }
+        & input[type="email"]{
+            width: 250px;
+        }
+        & textarea{
+            width: 250px;
+        }
+    }
+
+    .btn-submit {
+        padding: 8px 97px;
+    }
+
+    .we-location {
+        @include sizes(300px, 350px);
+    }
+}

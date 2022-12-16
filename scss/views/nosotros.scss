@@ -1,7 +1,13 @@
-.container-fluid {
-    margin: 20px 0px
+.we-main {
+    margin: 40px 0px;
+    background-color: $color-2;
+    border: 5px $color-blue solid;
 }
 
+.we-custom{
+    padding: 0px;
+}
+   
 .we__title {
     margin: 0px;
     color: $color-blue;
@@ -11,7 +17,22 @@
     color: $color-blue;
 }
 
-/* CONTACTO */
-.contactanosTittle {
-    color: $color-blue;
+@include media(lg){
+    .we-img {
+        @include sizes(358px, 460px);
+    }
 }
+
+@include media(md){
+    .we-main{
+        text-align: center;
+    }
+}
+
+@include media(sm) {
+    .we-img {
+        @include sizes(230px, 300px);
+    }
+}
+
+

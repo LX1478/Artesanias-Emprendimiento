@@ -53,5 +53,80 @@
 
 /* Para acomodar los t2, t3, t4 hacia la derecha */
 .t2 {
-    margin-left: 30%;
+    margin-left: 25%;
+}
+
+/* MEDIA QUERIES */
+@include media(lg) {
+    /* nosotros */
+    .we {
+        width: 180px;
+    }
+
+    /* contacto */
+    .footer-contact {
+        width: 270px;
+        text-align: center;
+    }
+
+    /* redes */
+    .networks {
+        &-custom {
+            width: 235px;
+            grid-row-gap: 15px;
+        }
+    }
+
+    .artisans{
+        & h6{
+            margin: 0px 5px;
+        }
+    }
+}
+
+/* A esta medida ya se empieza a ver mal el footer */
+@media screen and (max-width:737px) {
+    .information{
+        display: flex;
+        flex-direction: column;
+    }
+    .we {
+        margin: 0px 10px;
+        width: auto;
+    }
+    .footer-contact {
+        margin-top: 20px;
+        width: auto;
+        text-align: start;
+        text-align: center;
+    }
+    .networks {
+        text-align: start;
+        margin: 0px 10px
+    }
+}
+
+@include media(sm) {
+    .footer {
+        font-size: 12px;
+        width: auto;
+    }
+
+    .information {
+        padding-top: 20px;
+    }
+
+    .inf-title {
+        font-size: 14px;
+    }
+    .artisans h6 {
+        margin-right: 10px;
+        padding: 0px;
+        font-size: 12px;
+    }
+
+    /* Para acomodar los t2, t3, t4 hacia la derecha */
+    .t2 {
+        margin-left: 0px;
+    }
 }

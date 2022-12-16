@@ -66,14 +66,14 @@
             </div>
             <img src="../assets/iconos/favorite.png" alt="favoritos" class="account-img1">
             <span class="account-txt1">0 favoritos</span>
-            <a href="../pages/carrito.html" class="account-img2"><img src="../assets/iconos/cart.png" alt="carrito"></a>
+            <a href="../pages/carrito.html"><img src="../assets/iconos/cart.png" alt="carrito" class="account-img2"></a>
             <span class="account-txt2">0 ítems</span>
         </section>
     </header>
     <!-- ------------------------------------------- MAIN ------------------------------------------------->
-    <main class="main container-fluid">
-        <div class="contact-custom row">
-            <div class="col-12 col-md-6">
+    <main class="main">
+        <div class="d-flex flex-column align-items-center flex-lg-row justify-content-lg-evenly align-items-lg-start">
+            <div class="contact-custom__container">
                 <h2 class="contactanos-title1">CONTACTÁNOS</h2>
                 <form class="form-custom" action="">
                     <div class="form__inf">
@@ -97,7 +97,7 @@
                     <div class="form__inf">
                         <label for="">Mensaje</label>
                         <br>
-                        <textarea name="" id="form-message" cols="25" rows="3"></textarea>
+                        <textarea name="" id="form-message" cols="33" rows="3"></textarea>
                     </div>
                     <div class="form__inf">
                         <div class="form-check form-switch">
@@ -110,11 +110,11 @@
                     </div>
                 </form>
             </div>
-            <div class="contact-u col-12 col-md-6">
+            <div class="contact-custom__container">
                 <h2 class="contactanos-title2">UBICACIÓN</h2>
                 <iframe class="we-location"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3639.677440334117!2d-65.30202871173137!3d-24.183042676888615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f4287ab9d59%3A0x6e1578fc325ecf5e!2sPaseo%20de%20los%20Artesanos!5e0!3m2!1sen!2sar!4v1668442179434!5m2!1sen!2sar"
-                    width="400" height="580" style="border:0;" allowfullscreen="" loading="lazy"
+                    width="470" height="490" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
@@ -148,7 +148,7 @@
                 <br>
                 <div class="contact__btn">
                     <a href="../pages/contactate.html">
-                        <input class="contactBtn" type="button" value="CONTACTAR">
+                        <input type="button" value="CONTACTAR" id="contact__btn">
                     </a>
                 </div>
             </section>
@@ -177,11 +177,7 @@
         </div>
         <div class="artisans">
             <h6 class="t1">©Artesanías Emprendimiento 2022-Todos los derechos reservados</h6>
-            <h6 class="t2">Política de Privacidad</h6>
-            <h6>.</h6>
-            <h6 class="t3">Información Legal</h6>
-            <h6>.</h6>
-            <h6 class="t4">Términos y Condiciones</h6>
+            <h6 class="t2">Política de Privacidad . Información Legal . Términos y Condiciones</h6>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>

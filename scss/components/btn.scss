@@ -7,13 +7,27 @@
     color: $color-1;
 }
 
+/* Boton al lado del buscador */
+.search-btn {
+    position: relative;
+    background-color: $color-1;
+    right: 5px;
+    @include sizes(47px, 28px);
+    
+    border-radius: 0px 50px 50px 0px;
+    border-width: 0px;
+    & img {
+        @include sizes(70%, 75%);
+    }
+}
+
 //Boton de la parte superior derecha del header de mi cuenta
 .account-btn-custom {
     @extend .btn-custom;
 
     border:none;
     margin: 10px 0px;
-    padding: 8px 40px;
+    padding: 7px 22%;
 
     &:hover {
         background-color:$color-light-blue;
@@ -24,11 +38,12 @@
 .card-buy__btn {
     @extend .btn-custom;
     padding: 5px 30px;
-
+    border: 3px $color-blue solid;
+    color: $color-blue;
+    background-color: $color-1;
     &:hover{
-        border-color: $color-light-blue;
-        border-style: solid;
-        color: $color-2;
+        background-color: $color-blue;
+        color: $color-1;
     }
 }
 
@@ -46,7 +61,7 @@
 }
 
 //Boton de contactar del footer
-.contactBtn {
+#contact__btn {
     @extend .btn-custom;
     font-size: 15;
     border: $color-blue 3px solid;
@@ -57,4 +72,21 @@
         
     }
 }
+
+@include media(lg){
+    .btn-custom{
+        font-size: 16px;
+    }
+
+    .search-btn {
+        @include sizes(34px, 25px);
+        bottom: 1px;
+    }
+
+    .account-btn-custom {
+        margin: 10px 0px;
+        padding: 5px 20%;
+    }
+}
+
 

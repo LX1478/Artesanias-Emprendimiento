@@ -1,5 +1,5 @@
 //BASE
-@import './base/colors.scss';
+@import './base/var.scss';
 @import './base/reset.scss';
 @import './base/typo.scss';
 
@@ -22,16 +22,6 @@
 @import './views/home.scss';
 @import './views/blog.scss';
 @import './views/carrito.scss';
+@import './views/contactate.scss';
 @import './views/nosotros.scss';
-
-//MEDIAQUERIES
-//comun
-@import './mediaqueries/comun/headerM.scss';
-@import './mediaqueries/comun/footer.scss';
-//viewsM
-@import './mediaqueries/viewsM/homeM.scss';
-@import './mediaqueries/viewsM/blogM.scss';
-@import './mediaqueries/viewsM/carritoM.scss';
-@import './mediaqueries/viewsM/nosostrosM.scss';
-@import './mediaqueries/viewsM/contactateM.scss';
 

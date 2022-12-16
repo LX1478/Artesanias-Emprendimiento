@@ -1,5 +1,3 @@
-$border: $color-blue solid 4px;
-
 .cart-custom {
     background-color: $color-2;
     display: grid;
@@ -15,7 +13,6 @@ $border: $color-blue solid 4px;
 }
 
 .cart-title {
-    
     background-color: $color-1;
     border: $border;
 }
@@ -28,8 +25,8 @@ $border: $color-blue solid 4px;
     border-color: $color-blue;
 
     display:flex;
-    align-items: center;
-    justify-content: center;
+    @include flexbox(row, nowrap, center, center);
+    
 }
 
 .cart-card {
@@ -47,22 +44,19 @@ $border: $color-blue solid 4px;
     border-bottom: $border;
 
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    @include flexbox(row, nowrap, space-between, center);
 }
 
 .cart-buy__btn{
     height: 70px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexbox(row, nowrap, center, center);
 }
 
 .reasurrances-items {
     list-style-type: none;
     padding: 0px;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .reasurrances-item {
@@ -71,7 +65,52 @@ $border: $color-blue solid 4px;
     border-width: 0px 0px 0px 6px;
     border-style: solid;
     border-left-color: $color-blue;
+    font-size: 16px;
 
     display: flex;
     flex-direction: row;
+}
+
+@include media(lg){
+    .cart-custom{
+        font-size: 16px;
+    }
+    .reasurrances-item{
+        font-size: 14px;
+    }
+    .cart-card {
+        margin: 20px;
+    
+    }
+}
+@include media(md){
+    .cart-custom {
+        display: flex;
+        @include flexbox(column, wrap, center, center);
+    }
+    
+    .cart-container{
+        margin: 0px;
+        width: 90%;
+    }
+    .cart-inf {
+        margin: 20px 0px;
+    }
+
+    .cart-title {
+        width: auto;
+    }
+
+    .cart-items {
+        @include sizes(auto, 300px);
+    }
+
+    .cart-details{
+        width: 90%;
+    }
+
+    .cart-card {
+        margin: 20px 0px;
+
+    }
 }

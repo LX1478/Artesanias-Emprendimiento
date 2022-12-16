@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="artesanías, artesanos, productos de arcilla, artesanías Jujuy, compras online de artesanías">
-    <meta name="description" content="Descubre los mejores productos de artesanías que puedas encontrar en esete lugar desde la provincia de Jujuy">
+    <meta name="keywords"
+        content="artesanías, artesanos, productos de arcilla, artesanías Jujuy, compras online de artesanías">
+    <meta name="description"
+        content="Descubre los mejores productos de artesanías que puedas encontrar en esete lugar desde la provincia de Jujuy">
     <link rel="stylesheet" href="./bootstrap-5.2.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="icon" type="icon/png" href="./assets/iconos/logo.png">
@@ -71,11 +73,37 @@
 
         </section>
     </header>
-
-
-
+    
     <!-- ----------------------------------------------MAIN---------------------------------------------------- -->
     <main class="main">
+        <div class="carousel-custom">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./assets/img/mascaras.jpg" class="d-block w-100" alt="Máscaras">
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/img/botellones.jpg" class="d-block w-100" alt="Botellones">
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/img/productos.jpg" class="d-block w-100" alt="Productos varios ">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
         <div class="home-main">
             <aside class="aside-nov">
                 <div class="container-nov">
@@ -94,7 +122,8 @@
                         <img class="nov__img" src="./assets/img/nov3.jpg" alt="búho artesanal">
                         <h2 class="nov__title">¡Nuevos productos próximamente!</h2>
                         <article class="nov__art">
-                            Nuestros productos son de la mejor calidad y en unos meses nos llegan mas variedad de mercancia !ESTAR ATENTOS¡
+                            Nuestros productos son de la mejor calidad y en unos meses nos llegan mas variedad de
+                            mercancia !ESTAR ATENTOS¡
                         </article>
                     </section>
 
@@ -111,8 +140,14 @@
                             <img src="./assets/iconos/producto1.png" alt="Botellón">
                         </div>
                         <div class="card-description">
-                            <h5 class="card-description__title">Botellón</h5>
+                            <h5 class="card-description__title">Botellón arenado</h5>
+                            <button class="card-description__img">
+                                <img src="./assets/iconos/I-like.png" alt="Me gusta">
+                            </button>
                             <p class="card-description__price">$2000</p>
+                            <button class="card-description__img">
+                                <img src="./assets/iconos/cart2.png" alt="Llevar al carrito">
+                            </button>
                         </div>
                         <div class="card-buy-custom">
                             <input class="card-buy__btn" type="button" value="COMPRAR">
@@ -121,11 +156,17 @@
                     <section class="card-custom">
                         <!-- CARD 2 -->
                         <div class="card-img">
-                            <img src="./assets/img/buho.jpg" alt="Lechuza">
+                            <img src="./assets/iconos/producto2.png" alt="Lechuza">
                         </div>
                         <div class="card-description">
-                            <h5 class="card-description__title">Lechuza</h5>
+                            <h5 class="card-description__title">Botellón arenado</h5>
+                            <button class="card-description__img">
+                                <img src="./assets/iconos/I-like.png" alt="Me gusta">
+                            </button>
                             <p class="card-description__price">$2000</p>
+                            <button class="card-description__img">
+                                <img src="./assets/iconos/cart2.png" alt="Llevar al carrito">
+                            </button>
                         </div>
                         <div class="card-buy-custom">
                             <input class="card-buy__btn" type="button" value="COMPRAR">
@@ -137,8 +178,14 @@
                             <img src="./assets/iconos/producto3.png" alt="Denario">
                         </div>
                         <div class="card-description">
-                            <h5 class="card-description__title">Denario</h5>
+                            <h5 class="card-description__title">Botellón arenado</h5>
+                            <button class="card-description__img">
+                                <img src="./assets/iconos/I-like.png" alt="Me gusta">
+                            </button>
                             <p class="card-description__price">$2000</p>
+                            <button class="card-description__img">
+                                <img src="./assets/iconos/cart2.png" alt="Llevar al carrito">
+                            </button>
                         </div>
                         <div class="card-buy-custom">
                             <input class="card-buy__btn" type="button" value="COMPRAR">
@@ -147,11 +194,17 @@
                     <section class="card-custom">
                         <!-- CARD 4 -->
                         <div class="card-img">
-                            <img src="./assets/iconos/producto4.png" alt="Gato">
+                            <img src="./assets/img/producto4.jpg" alt="Gato">
                         </div>
                         <div class="card-description">
-                            <h5 class="card-description__title">Gato</h5>
+                            <h5 class="card-description__title">Búho</h5>
+                            <button class="card-description__img">
+                                <img src="./assets/iconos/I-like.png" alt="Me gusta">
+                            </button>
                             <p class="card-description__price">$2000</p>
+                            <button class="card-description__img">
+                                <img src="./assets/iconos/cart2.png" alt="Llevar al carrito">
+                            </button>
                         </div>
                         <div class="card-buy-custom">
                             <input class="card-buy__btn" type="button" value="COMPRAR">
@@ -163,8 +216,14 @@
                             <img src="./assets/iconos/producto5.png" alt="Taza">
                         </div>
                         <div class="card-description">
-                            <h5 class="card-description__title">Taza</h5>
+                            <h5 class="card-description__title">Indio</h5>
+                            <button class="card-description__img">
+                                <img src="./assets/iconos/I-like.png" alt="Me gusta">
+                            </button>
                             <p class="card-description__price">$2000</p>
+                            <button class="card-description__img">
+                                <img src="./assets/iconos/cart2.png" alt="Llevar al carrito">
+                            </button>
                         </div>
                         <div class="card-buy-custom">
                             <input class="card-buy__btn" type="button" value="COMPRAR">
@@ -176,8 +235,128 @@
                             <img src="./assets/iconos/producto6.png" alt="Vaso">
                         </div>
                         <div class="card-description">
-                            <h5 class="card-description__title">Vaso</h5>
+                            <h5 class="card-description__title">Indio</h5>
+                            <button class="card-description__img">
+                                <img src="./assets/iconos/I-like.png" alt="Me gusta">
+                            </button>
                             <p class="card-description__price">$2000</p>
+                            <button class="card-description__img">
+                                <img src="./assets/iconos/cart2.png" alt="Llevar al carrito">
+                            </button>
+                        </div>
+                        <div class="card-buy-custom">
+                            <input class="card-buy__btn" type="button" value="COMPRAR">
+                        </div>
+                    </section>
+                    <section class="card-custom">
+                        <!-- CARD 7 -->
+                        <div class="card-img">
+                            <img src="./assets/iconos/producto7.png" alt="Vaso">
+                        </div>
+                        <div class="card-description">
+                            <h5 class="card-description__title">Jarra</h5>
+                            <button class="card-description__img">
+                                <img src="./assets/iconos/I-like.png" alt="Me gusta">
+                            </button>
+                            <p class="card-description__price">$2000</p>
+                            <button class="card-description__img">
+                                <img src="./assets/iconos/cart2.png" alt="Llevar al carrito">
+                            </button>
+                        </div>
+                        <div class="card-buy-custom">
+                            <input class="card-buy__btn" type="button" value="COMPRAR">
+                        </div>
+                    </section>
+                    <section class="card-custom">
+                        <!-- CARD 8 -->
+                        <div class="card-img">
+                            <img src="./assets/iconos/producto8.png" alt="Vaso">
+                        </div>
+                        <div class="card-description">
+                            <h5 class="card-description__title">Vaso</h5>
+                            <button class="card-description__img">
+                                <img src="./assets/iconos/I-like.png" alt="Me gusta">
+                            </button>
+                            <p class="card-description__price">$2000</p>
+                            <button class="card-description__img">
+                                <img src="./assets/iconos/cart2.png" alt="Llevar al carrito">
+                            </button>
+                        </div>
+                        <div class="card-buy-custom">
+                            <input class="card-buy__btn" type="button" value="COMPRAR">
+                        </div>
+                    </section>
+                    <section class="card-custom">
+                        <!-- CARD 9 -->
+                        <div class="card-img">
+                            <img src="./assets/iconos/producto9.png" alt="Vaso">
+                        </div>
+                        <div class="card-description">
+                            <h5 class="card-description__title">Denario</h5>
+                            <button class="card-description__img">
+                                <img src="./assets/iconos/I-like.png" alt="Me gusta">
+                            </button>
+                            <p class="card-description__price">$2000</p>
+                            <button class="card-description__img">
+                                <img src="./assets/iconos/cart2.png" alt="Llevar al carrito">
+                            </button>
+                        </div>
+                        <div class="card-buy-custom">
+                            <input class="card-buy__btn" type="button" value="COMPRAR">
+                        </div>
+                    </section>
+                    <section class="card-custom">
+                        <!-- CARD 10 -->
+                        <div class="card-img">
+                            <img src="./assets/iconos/producto10.png" alt="Vaso">
+                        </div>
+                        <div class="card-description">
+                            <h5 class="card-description__title">Pecebre chico</h5>
+                            <button class="card-description__img">
+                                <img src="./assets/iconos/I-like.png" alt="Me gusta">
+                            </button>
+                            <p class="card-description__price">$2000</p>
+                            <button class="card-description__img">
+                                <img src="./assets/iconos/cart2.png" alt="Llevar al carrito">
+                            </button>
+                        </div>
+                        <div class="card-buy-custom">
+                            <input class="card-buy__btn" type="button" value="COMPRAR">
+                        </div>
+                    </section>
+                    <section class="card-custom">
+                        <!-- CARD 11 -->
+                        <div class="card-img">
+                            <img src="./assets/iconos/producto11.png" alt="Vaso">
+                        </div>
+                        <div class="card-description">
+                            <h5 class="card-description__title">Azucarera</h5>
+                            <button class="card-description__img">
+                                <img src="./assets/iconos/I-like.png" alt="Me gusta">
+                            </button>
+                            <p class="card-description__price">$2000</p>
+                            <button class="card-description__img">
+                                <img src="./assets/iconos/cart2.png" alt="Llevar al carrito">
+                            </button>
+                        </div>
+                        <div class="card-buy-custom">
+                            <input class="card-buy__btn" type="button" value="COMPRAR">
+                        </div>
+                    </section>
+                    <section class="card-custom">
+                        <!-- CARD 12 -->
+                        <div class="card-img">
+                            <img src="./assets/iconos/producto12.png" alt="Vaso">
+                        </div>
+                        <div class="card-description">
+                            <h5 class="card-description__title">Pecebre Grande</h5>
+                            <button class="card-description__img">
+                                <img src="./assets/iconos/I-like.png" alt="Me gusta">
+                            </button>
+                            <p class="card-description__price">$2000</p>
+                            <button class="card-description__img">
+                                <img src="./assets/iconos/cart2.png" alt="Llevar al carrito">
+                            </button>
                         </div>
                         <div class="card-buy-custom">
                             <input class="card-buy__btn" type="button" value="COMPRAR">
@@ -193,7 +372,8 @@
             <section class="we">
                 <h4 class="inf-title">NOSOTROS</h4>
                 <article class="we__text">
-                    Somos un emprendiento de artesanias, de las mejores de la provincia de Jujuy, trabajamos sobre todo e productos de arcilla. ¡Atención! contáctanos para compras mayoristas
+                    Somos un emprendiento de artesanias, de las mejores de la provincia de Jujuy, trabajamos sobre todo
+                    e productos de arcilla. ¡Atención! contáctanos para compras mayoristas
                 </article>
             </section>
 
@@ -215,7 +395,7 @@
                 <br>
                 <div class="contact__btn">
                     <a href="./pages/contactate.html">
-                        <input class="contactBtn" type="button" value="CONTACTAR">
+                        <input type="button" value="CONTACTAR" id="contact__btn">
                     </a>
                 </div>
             </section>
@@ -244,11 +424,7 @@
 
         <div class="artisans">
             <h6 class="t1">©Artesanías Emprendimiento 2022-Todos los derechos reservados</h6>
-            <h6 class="t2">Política de Privacidad</h6>
-            <h6>.</h6>
-            <h6 class="t3">Información Legal</h6>
-            <h6>.</h6>
-            <h6 class="t4">Términos y Condiciones</h6>
+            <h6 class="t2">Política de Privacidad . Información Legal . Términos y Condiciones</h6>
         </div>
     </footer>
 

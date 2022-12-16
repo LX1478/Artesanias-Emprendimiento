@@ -9,3 +9,14 @@ $color-1: white;
 $color-2: #ebebeb;
 $color-3: #F8F9FA;
 $color-4: #938C8C;
+
+/* border */
+$border: 4px $color-blue solid;
+
+/* Media queries */
+$breakpoints: (
+  sm: 480px,
+  md: 768px,
+  lg: 1024px,
+);
+

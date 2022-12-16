@@ -1,4 +1,21 @@
+/* Mixin para poner tamaños */
 @mixin sizes ($width, $height){
     width: $width;
     height: $height;
 }
+
+/* Para flexbox */
+@mixin flexbox($direction, $wrap, $justify-content, $align-items,){
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+/* mixin para los media queries */
+@mixin media($breakpoint){
+    @media screen and (max-width: map-get($breakpoints, $breakpoint)){
+        @content;
+    }
+}
+

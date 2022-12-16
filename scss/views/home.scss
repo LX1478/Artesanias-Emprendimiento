@@ -1,12 +1,17 @@
 .home-main {
+    padding-bottom: 40px;
     background-color: $color-2;
     display: grid;
     grid-template-columns: 1fr 4fr;
 }
 
+.carousel-custom{
+    background-color: $color-2;
+    padding: 40px 100px;
+}
+
 .aside-nov{
     background-color: $color-2;
-    height: 950;
 }
 
 .container-nov {
@@ -48,7 +53,6 @@
     margin-top: 30px;
     
     &__title {
-        margin: 0px;
         padding-left: 40px;
         margin-bottom: 40px;
         height: 40px;
@@ -70,9 +74,7 @@
     border: $color-blue solid 3px;
 
     display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
+    @include flexbox(column, wrap, center, center); 
     align-content: space-around;
 
     &:hover {
@@ -82,8 +84,23 @@
     }
 }
 
-.card-description__title{
-    font-size: 18px;
+.card-description{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    &__title{
+        grid-column: 1/4;
+    }
+    
+    &__img{
+        position: relative;
+        border:none;
+        background-color: $color-1;
+        &:hover{
+            top: -30px;
+            }
+    }
+    
 }
 
 .card-img {
@@ -91,3 +108,63 @@
     text-align: center;
 }
 
+@include media(lg){
+    .home-main{
+        grid-template-columns: 1fr;
+    }
+    .carousel-custom{
+        padding: 30px 50px;
+    }
+    .main-cards{
+        &__custom{
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+}
+
+@include media(md){
+    .main-cards{
+        &__custom{
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    .card-custom{
+        font-size: 16px;
+        height: 320px;
+    }
+    .card-description__title {
+        font-size: 16px;
+    }
+}
+
+@include media(sm) {
+    .carousel-custom{
+        padding: 20px 0px;
+    }
+    
+    .aside-nov {
+        font-size: 14px;
+    }
+
+    .nov {
+        margin: 0px 10px;
+    }
+
+    .main-cards__custom {
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+    }
+
+    .card-custom{
+        &:hover{
+            transform: scale(1, 1);
+        }
+    }
+
+    .card-description__title {
+        font-size: 14px;
+    }
+}

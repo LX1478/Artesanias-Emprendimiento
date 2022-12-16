@@ -1,9 +1,9 @@
 .header {
     font-family: Goldman, cursive;
     background-color: $color-red;
-    font-size: 15px;
+    font-size: 16px;
     color: $color-1;
-    
+
     display: flex;
     flex-direction: row;
 }
@@ -16,34 +16,34 @@
     margin: 20px 0px;
 }
 
+/* Buscador */
 .section-search {
     padding: 10px 0px;
     flex-grow: 2;
+    text-align: center;
 }
+
 .input-search {
     margin-top: 30px;
-    width: 450px;
-    background-color: $color-1;
 }
+
 .search-custom {
-    width: 400px;
-    height: 25px;
+    width: 76%;
+    padding: 2px 8px;
+    border: 0px $color-1 solid;
+    border-radius: 50px 0px 0px 50px;
+    outline: none;
+
+    &:focus {
+        border: 3px $color-blue solid;
+    }
 }
 
-.search-btn {
-    border: none;
-    background-color: $color-1;
-}
-
-.search-btn img {
-    width: 24px;
-    height: 23px;
-}
-
+/* Mi cuenta */
 .section-account {
     flex-grow: 1;
     display: grid;
-    
+
     grid-template-areas:
         "abtn abtn"
         "aimg1 aimg2"
@@ -56,7 +56,7 @@
 
 .account-img1 {
     grid-area: aimg1;
-    position:relative;
+    position: relative;
 
     &:hover {
         animation-name: girar;
@@ -66,23 +66,18 @@
 
 .account-img2 {
     grid-area: aimg2;
-    &:hover{
-        animation-name: reversa;
-        animation-duration: 2s;
+    position: relative;
+
+    &:hover {
+        transform: rotateY(360deg);
+        transition: 2s ease;
     }
 }
 
-@keyframes girar{
-    50%{
+@keyframes girar {
+    50% {
         transform: rotate(370deg);
     }
-}
-
-@keyframes reversa {
-    50% {
-        transform: rotateY(160deg);
-    }
-
 }
 
 .account-txt1 {
@@ -93,3 +88,85 @@
     grid-area: atxt2;
 }
 
+
+/* MEDIA QUERIES */
+@include media(lg){
+    /* header */
+    .header{
+        font-size: 14px;
+    }
+    /* Logo */
+    .brand-logo{
+         @include sizes(190px, 100px);
+    }
+    .dropdown-btn{
+        margin-left: 10px;
+        padding: 5px;
+    }
+    /* Buscador */
+    
+
+    /* Mi cuenta */
+    .account-img1{
+        @include sizes(60px, 55px);
+    }
+    .account-img2{
+        @include sizes(60px, 55px)
+    }
+}
+
+@include media(md){
+    .header{
+        padding-bottom: 40px;
+        font-size: 14px;
+        display: grid;
+        grid-template-areas: 
+        "sm sa"
+        "ss ss"
+    }
+
+    .section-main{
+        grid-area: sm;
+    }
+
+    .section-search{
+        grid-area: ss;
+    }
+
+    .section-account{
+        grid-area: sa;
+    }
+}
+
+@include media(sm){
+    /* seccion del log */
+    .header{
+        padding: 0px;
+        display: flex;
+        @include flexbox(column, wrap, start, center);
+    }
+
+    .section-main{
+        align-self: start;
+    }
+
+    .brand-logo {
+        @include sizes(auto, auto);
+
+    }
+    /* seccion del buscador */
+    .section-search {
+        margin: 0px;
+    }
+    .input-search{
+        margin: 0px;
+    }
+
+    .search-custom {
+        width: 270px;
+    }
+
+    .section-account{
+        width: 280;
+    }
+};
